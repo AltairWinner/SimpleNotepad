@@ -12,6 +12,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         
         <Menu Grid.Row="0">
@@ -40,5 +41,14 @@
             TextWrapping="Wrap" UndoLimit="256"
             TextChanged="TextBox_OnTextChanged"
             />
+
+        <WrapPanel Grid.Row="2">
+            <TextBlock Margin="5, 0, 5, 0">Symbol Count: </TextBlock>
+            <TextBlock x:Name="symbolCountTextbox"></TextBlock>
+            <TextBlock Margin="5, 0, 5, 0">Word Count: </TextBlock>
+            <TextBlock x:Name="wordCountTextbox"></TextBlock>
+            <TextBlock Margin="5, 0, 5, 0">Encoding:</TextBlock>
+            <TextBlock x:Name="encodingTextbox"></TextBlock>
+        </WrapPanel>
     </Grid>
 </Window>
